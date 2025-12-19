@@ -45,7 +45,7 @@ export default function ContactPage() {
                                 </h2>
                                 <div className="py-4">
                                     <span className="text-xl md:text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-pink-600 to-purple-600 font-sans selection:bg-pink-100">
-                                        contact@mamanbilleentete.fr
+                                        mamanbilleentete@gmail.com
                                     </span>
                                 </div>
                                 <p className="text-lg text-slate-600 font-serif max-w-lg mx-auto leading-relaxed">
@@ -54,7 +54,7 @@ export default function ContactPage() {
                             </div>
 
                             <Button asChild size="lg" className="h-16 px-12 text-xl rounded-full gap-3 shadow-xl hover:shadow-2xl hover:scale-105 transition-all duration-300 bg-gradient-to-r from-pink-500 to-rose-600 hover:from-pink-600 hover:to-rose-700 text-white border-none ring-offset-2 hover:ring-2 ring-pink-200">
-                                <a href="mailto:contact@mamanbilleentete.fr">
+                                <a href="mailto:mamanbilleentete@gmail.com">
                                     <Mail className="h-6 w-6 mr-2 animate-pulse" />
                                     M'écrire maintenant
                                     <ArrowRight className="h-6 w-6 ml-1" />
