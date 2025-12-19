@@ -17,20 +17,20 @@ export default function Home() {
         <div className="container relative z-10 px-4 md:px-6 mx-auto">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             {/* Left Column: Text Content */}
-            <div className="text-left space-y-6">
+            <div className="flex flex-col items-center text-center space-y-6">
               <span className="block w-full text-center text-sm md:text-base font-semibold uppercase tracking-[0.2em] text-slate-500 animate-in fade-in slide-in-from-bottom-4 duration-700">
                 L'excellence scolaire par la bienveillance
               </span>
               <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight text-slate-800 dark:text-slate-100 font-sans leading-tight">
                 <span className="bg-clip-text text-transparent bg-gradient-to-r from-pink-600 to-purple-600 italic relative inline-block">
-                  Maman <br></br>Bille-en-Tête
+                  Maman <br /> Bille-en-Tête
                 </span>
               </h1>
-              <p className="max-w-xl text-slate-600 dark:text-slate-300 text-lg md:text-xl leading-relaxed font-serif text-justify">
+              <p className="max-w-xl text-slate-600 dark:text-slate-300 text-lg md:text-xl leading-relaxed font-serif text-center">
                 Bienvenue dans un espace dédié à la réussite et à l'épanouissement scolaire de votre enfant.
                 Nous allions <strong>rigueur académique</strong> et <strong>approche bienveillante</strong> pour révéler le potentiel de chaque élève.
               </p>
-              <div className="flex flex-col sm:flex-row gap-4 pt-4 justify-center lg:justify-start">
+              <div className="flex flex-col sm:flex-row gap-4 pt-4 justify-center">
                 <Button asChild size="lg" className="rounded-full px-8 text-lg h-14 shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all bg-white text-slate-900 border-2 border-slate-200 hover:border-pink-200 hover:bg-pink-50">
                   <Link href="/rates">
                     Découvrir nos offres
