@@ -22,7 +22,7 @@ export default function Home() {
                 L'excellence scolaire par la bienveillance
               </span>
               <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight text-slate-800 dark:text-slate-100 font-sans leading-tight">
-                <span className="text-primary italic relative inline-block">
+                <span className="bg-clip-text text-transparent bg-gradient-to-r from-pink-600 to-purple-600 italic relative inline-block">
                   Maman Bille-en-Tête
                 </span>
               </h1>
@@ -31,13 +31,13 @@ export default function Home() {
                 Nous allions <strong>rigueur académique</strong> et <strong>approche bienveillante</strong> pour révéler le potentiel de chaque élève.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 pt-4 justify-center lg:justify-start">
-                <Button asChild size="lg" className="rounded-full px-8 text-lg h-14 shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all bg-black text-white border-2 border-transparent hover:bg-slate-800">
+                <Button asChild size="lg" className="rounded-full px-8 text-lg h-14 shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all bg-white text-slate-900 border-2 border-slate-200 hover:border-pink-200 hover:bg-pink-50">
                   <Link href="/rates">
                     Découvrir nos offres
                     <ArrowRight className="ml-2 h-5 w-5" />
                   </Link>
                 </Button>
-                <Button asChild size="lg" className="rounded-full px-8 text-lg h-14 shadow-lg hover:shadow-xl hover:-translate-y-0.5 transition-all bg-black hover:bg-slate-800 text-white border-none ring-offset-2 focus:ring-2 ring-black">
+                <Button asChild size="lg" className="rounded-full px-8 text-lg h-14 shadow-lg hover:shadow-xl hover:-translate-y-0.5 transition-all bg-gradient-to-r from-pink-500 to-purple-600 text-white border-none hover:opacity-90 ring-offset-2 focus:ring-2 ring-pink-200">
                   <Link href="/contact">
                     Contact
                   </Link>
@@ -66,7 +66,7 @@ export default function Home() {
             <Card className="border-none shadow-lg bg-white h-full rounded-2xl hover:shadow-xl transition-all duration-300 ring-1 ring-slate-100">
               <CardHeader className="bg-gradient-to-br from-primary/5 to-transparent pb-8 pt-8 px-8">
                 <div className="flex items-center gap-5">
-                  <div className="p-3 bg-white rounded-2xl shadow-sm text-primary">
+                  <div className="p-3 bg-white rounded-2xl shadow-sm text-pink-600">
                     <User className="h-8 w-8" />
                   </div>
                   <CardTitle className="text-3xl font-sans text-slate-800">Mon parcours</CardTitle>
@@ -107,7 +107,7 @@ export default function Home() {
                   </CardTitle>
                 </CardHeader>
                 <CardContent className="px-8 pb-8">
-                  <p className="text-slate-600 font-serif text-lg leading-relaxed text-justify">
+                  <p className="text-slate-600 font-serif text-lg leading-relaxed text-left">
                     Spécialiste du niveau classe primaire jusqu'aux études supérieures.
                     Remise à niveau et perfectionnement.
                   </p>
@@ -124,7 +124,7 @@ export default function Home() {
                   </CardTitle>
                 </CardHeader>
                 <CardContent className="px-8 pb-8">
-                  <p className="text-slate-600 font-serif text-lg leading-relaxed text-justify">
+                  <p className="text-slate-600 font-serif text-lg leading-relaxed text-left">
                     Préparation intensive : Brevet, Bac de Français, CRPE, CAPES.
                     Méthodologie et gestion du stress.
                   </p>
@@ -136,23 +136,23 @@ export default function Home() {
       </section>
 
       {/* Pedagogie Section */}
-      <section className="w-full py-24 bg-white relative">
+      <section className="w-full pt-16 pb-8 bg-white relative">
         <div className="container px-4 md:px-6 mx-auto">
           <div className="text-center max-w-3xl mx-auto mb-16">
             <span className="text-secondary font-bold uppercase tracking-[0.2em] text-sm mb-2 block">NOTRE APPROCHE</span>
             <h2 className="text-3xl font-bold tracking-widest uppercase md:text-4xl mb-10 font-sans text-slate-900">UNE PÉDAGOGIE SUR MESURE</h2>
             <blockquote className="relative p-8 text-xl md:text-2xl italic font-serif text-slate-700 leading-relaxed bg-slate-50 rounded-3xl border border-slate-100">
-              "L'équipe de Maman Bille-en-Tête ne se contente pas de dispenser des cours, elle transmet une <span className="text-primary font-semibold">méthode</span>, une <span className="text-primary font-semibold">structure</span>, des outils et une disponibilité même hors cours."
+              "L'équipe de Maman Bille-en-Tête ne se contente pas de dispenser des cours, elle transmet une <span className="text-pink-600 font-semibold">méthode</span>, une <span className="text-pink-600 font-semibold">structure</span>, des outils et une disponibilité même hors cours."
             </blockquote>
           </div>
 
           <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
             {[
-              { title: "Méthodologie & Structure", icon: Sparkles, color: "text-indigo-500", desc: "Apprendre à apprendre. Nous donnons les clés pour s'organiser, mémoriser et réussir durablement." },
-              { title: "Distanciel & Outils", icon: Laptop, color: "text-blue-500", desc: "Utilisation d'outils numériques modernes pour des cours interactifs et engageants, où que vous soyez." },
-              { title: "Ateliers IEF & Familles", icon: User, color: "text-orange-500", desc: "Instruction En Famille : accompagnement complet des familles (supports, programmes, ateliers sur mesure)." }
+              { title: "Méthodologie & Structure", icon: Sparkles, color: "text-purple-500", desc: "Apprendre à apprendre. Nous donnons les clés pour s'organiser, mémoriser et réussir durablement." },
+              { title: "Distanciel & Outils", icon: Laptop, color: "text-pink-500", desc: "Utilisation d'outils numériques modernes pour des cours interactifs et engageants, où que vous soyez." },
+              { title: "Ateliers IEF & Familles", icon: User, color: "text-rose-500", desc: "Instruction En Famille : accompagnement complet des familles (supports, programmes, ateliers sur mesure)." }
             ].map((feature, i) => (
-              <Card key={i} className="group bg-primary/5 border-none shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 rounded-2xl overflow-hidden">
+              <Card key={i} className="group bg-pink-50/30 border-none shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 rounded-2xl overflow-hidden">
                 <CardHeader className="p-8 pb-4 flex flex-col items-center text-center">
                   <div className="mb-4 inline-block p-4 rounded-2xl bg-white shadow-sm ring-1 ring-slate-100 group-hover:scale-110 transition-transform duration-300">
                     <feature.icon className={`h-8 w-8 ${feature.color}`} />
@@ -160,7 +160,7 @@ export default function Home() {
                   <CardTitle className="text-xl font-bold font-sans text-slate-800 uppercase tracking-wider">{feature.title}</CardTitle>
                 </CardHeader>
                 <CardContent className="p-8 pt-2">
-                  <p className="text-slate-600 font-serif text-lg leading-relaxed text-justify">
+                  <p className="text-slate-600 font-serif text-lg leading-relaxed text-center">
                     {feature.desc}
                   </p>
                 </CardContent>
@@ -171,7 +171,7 @@ export default function Home() {
       </section>
 
       {/* CTA Section */}
-      <section className="w-full py-32 bg-primary relative overflow-hidden">
+      <section className="w-full py-32 bg-gradient-to-r from-slate-900 to-slate-800 relative overflow-hidden">
         <div className="absolute inset-0 opacity-10">
           <svg className="h-full w-full" viewBox="0 0 100 100" preserveAspectRatio="none">
             <path d="M0 100 C 20 0 50 0 100 100 Z" fill="white" />

@@ -9,11 +9,11 @@ export default function AboutPage() {
                 <div className="space-y-6 text-center max-w-3xl mx-auto">
                     <h1 className="text-4xl font-extrabold tracking-widest font-sans text-slate-900 sm:text-5xl mb-6 uppercase">
                         À PROPOS DE <br />
-                        Maman Bille-en-Tête
+                        <span className="bg-clip-text text-transparent bg-gradient-to-r from-pink-600 to-purple-600">Maman Bille-en-Tête</span>
                     </h1>
                     <p className="text-xl md:text-2xl text-slate-600 font-serif leading-relaxed">
                         Enseignante, Formatrice et Coach scolaire. <br />
-                        <span className="text-primary font-semibold">14 ans d'expertise</span> au service de votre réussite.
+                        <span className="text-pink-600 font-semibold">14 ans d'expertise</span> au service de votre réussite.
                     </p>
                 </div>
 
@@ -21,14 +21,14 @@ export default function AboutPage() {
                     <div className="space-y-10">
                         <section className="space-y-6 bg-white p-8 rounded-2xl shadow-sm ring-1 ring-slate-100">
                             <h2 className="text-2xl font-bold font-sans text-slate-800 flex flex-col items-center gap-4 uppercase tracking-wider text-center">
-                                <span className="p-3 bg-primary/10 rounded-2xl text-primary mb-1">
+                                <span className="p-3 bg-pink-50 rounded-2xl text-pink-600 mb-1">
                                     <GraduationCap className="h-8 w-8" />
                                 </span>
                                 Mon Parcours
                             </h2>
                             <div className="prose prose-slate dark:prose-invert space-y-4 text-slate-600 font-serif">
                                 <p className="text-lg leading-relaxed text-justify">
-                                    Je suis enseignante certifiée en <strong className="text-primary font-sans">Lettres Modernes depuis 14 ans</strong>. Mon parcours est riche et varié, me permettant de m'adapter et de répondre aux besoins de chaque apprenant.
+                                    Je suis enseignante certifiée en <strong className="text-pink-600 font-sans">Lettres Modernes depuis 14 ans</strong>. Mon parcours est riche et varié, me permettant de m'adapter et de répondre aux besoins de chaque apprenant.
                                 </p>
                                 <ul className="space-y-3 list-disc pl-5">
                                     {[
@@ -45,7 +45,7 @@ export default function AboutPage() {
 
                         <section className="space-y-6 bg-white p-8 rounded-2xl shadow-sm ring-1 ring-slate-100">
                             <h2 className="text-2xl font-bold font-sans text-slate-800 flex flex-col items-center gap-4 uppercase tracking-wider text-center">
-                                <span className="p-3 bg-secondary/10 rounded-2xl text-secondary mb-1">
+                                <span className="p-3 bg-purple-50 rounded-2xl text-purple-600 mb-1">
                                     <Sparkles className="h-8 w-8" />
                                 </span>
                                 Ma Méthodologie
@@ -76,13 +76,13 @@ export default function AboutPage() {
 
                         <div className="bg-white p-8 rounded-2xl border border-slate-100 shadow-sm">
                             <h3 className="font-bold text-xl mb-6 font-sans text-slate-800 flex flex-col items-center gap-4 uppercase tracking-wide text-center">
-                                <span className="p-3 bg-orange-50 rounded-2xl text-orange-500 mb-1">
+                                <span className="p-3 bg-pink-100 rounded-2xl text-pink-600 mb-1">
                                     <Award className="h-8 w-8" />
                                 </span>
                                 DOMAINES D'EXPERTISE
                             </h3>
                             <div className="flex flex-wrap gap-3">
-                                <Badge variant="secondary" className="px-4 py-2 text-sm rounded-full bg-primary/10 text-primary border-2 border-primary hover:bg-primary/20 hover:text-primary transition-colors">Lettres Modernes</Badge>
+                                <Badge variant="secondary" className="px-4 py-2 text-sm rounded-full bg-pink-50 text-pink-600 border-2 border-pink-100 hover:bg-pink-100 hover:text-pink-700 transition-colors">Lettres Modernes</Badge>
                                 <Badge variant="secondary" className="px-4 py-2 text-sm rounded-full bg-orange-50 text-orange-600 hover:bg-orange-100 transition-colors">Coaching CRPE/CAPES</Badge>
                                 <Badge variant="outline" className="px-4 py-2 text-sm rounded-full border-slate-200 text-slate-600">Pédagogie Active</Badge>
                                 <Badge variant="outline" className="px-4 py-2 text-sm rounded-full border-slate-200 text-slate-600">Préparation DNB/BAC</Badge>
