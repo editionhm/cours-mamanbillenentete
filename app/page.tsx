@@ -23,7 +23,7 @@ export default function Home() {
               </span>
               <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight text-slate-800 dark:text-slate-100 font-sans leading-tight">
                 <span className="bg-clip-text text-transparent bg-gradient-to-r from-pink-600 to-purple-600 italic relative inline-block">
-                  Maman Bille-en-Tête
+                  Maman <br></br>Bille-en-Tête
                 </span>
               </h1>
               <p className="max-w-xl text-slate-600 dark:text-slate-300 text-lg md:text-xl leading-relaxed font-serif text-justify">
@@ -178,8 +178,8 @@ export default function Home() {
           </svg>
         </div>
         <div className="container relative px-4 md:px-6 mx-auto text-center space-y-10">
-          <h2 className="text-3xl font-bold tracking-tight md:text-5xl font-sans text-black">Prêt à révéler le potentiel de votre enfant ?</h2>
-          <p className="max-w-2xl mx-auto text-black/90 md:text-2xl font-serif">
+          <h2 className="text-3xl font-bold tracking-tight md:text-5xl font-sans text-white">Prêt à révéler le potentiel de votre enfant ?</h2>
+          <p className="max-w-2xl mx-auto text-white/90 md:text-2xl font-serif">
             Contactez-nous pour échanger sur vos besoins et définir ensemble le meilleur accompagnement.
           </p>
 
