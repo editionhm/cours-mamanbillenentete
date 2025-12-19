@@ -9,7 +9,7 @@ export function Footer() {
                 <div className="flex flex-col md:flex-row items-center justify-between gap-6">
                     {/* Left: Logo & Copyright */}
                     <div className="flex items-center gap-3 text-sm text-slate-500">
-                        <div className="relative h-10 w-10 overflow-hidden rounded-full border border-slate-200 hidden md:block">
+                        <div className="relative h-10 w-10 overflow-hidden rounded-full border border-slate-200 block">
                             <Image
                                 src="/images/logo.jpg"
                                 alt="Logo Maman Bille-en-Tête"
@@ -22,10 +22,10 @@ export function Footer() {
 
                     {/* Center: Social Icons */}
                     <div className="flex items-center justify-center gap-6">
-                        <Link href="https://www.instagram.com/maman_billeentete/" target="_blank" className="p-2 bg-white rounded-full shadow-sm text-slate-600 hover:text-pink-600 hover:scale-110 transition-all">
+                        <Link href="https://www.instagram.com/maman_billeentete/" target="_blank" className="p-2 bg-white rounded-full shadow-sm text-pink-600 hover:scale-110 transition-all">
                             <Instagram className="h-5 w-5" />
                         </Link>
-                        <Link href="https://www.youtube.com/@MamanBille-en-tete" target="_blank" className="p-2 bg-white rounded-full shadow-sm text-slate-600 hover:text-red-600 hover:scale-110 transition-all">
+                        <Link href="https://www.youtube.com/@MamanBille-en-tete" target="_blank" className="p-2 bg-white rounded-full shadow-sm text-red-600 hover:scale-110 transition-all">
                             <Youtube className="h-5 w-5" />
                         </Link>
                     </div>

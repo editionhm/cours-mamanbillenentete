@@ -18,7 +18,7 @@ const individualRates = [
             "Bilan de fin de séance",
             "Support de cours inclus"
         ],
-        action: "Réserver",
+        action: "Sans engagement",
         highlight: false,
     },
     {
@@ -34,7 +34,7 @@ const individualRates = [
             "Planning flexible",
             "Supports de révision offerts"
         ],
-        action: "Choisir ce forfait",
+        action: "Idéal pour réviser",
         highlight: false,
     },
     {
@@ -50,7 +50,7 @@ const individualRates = [
             "Suivi personnalisé approfondi",
             "Contact direct WhatsApp"
         ],
-        action: "Choisir ce forfait",
+        action: "Le plus populaire",
         highlight: true, // Most popular usually
         badge: "Meilleure Offre"
     },
@@ -67,7 +67,7 @@ const individualRates = [
             "Suivi complet et coaching",
             "Priorité sur le planning"
         ],
-        action: "Choisir ce forfait",
+        action: "Suivi Premium",
         highlight: false,
     }
 ]
@@ -83,7 +83,7 @@ const groupRate = {
         "Exercices ludiques et interactifs",
         "Entraide & Motivation"
     ],
-    action: "Rejoindre un groupe"
+    action: "Places limitées"
 }
 
 export default function RatesPage() {
@@ -172,12 +172,12 @@ export default function RatesPage() {
                                     </ul>
                                 </CardContent>
                                 <CardFooter className="p-8 pt-0">
-                                    <Button className={`w-full rounded-full h-12 text-base font-bold tracking-wide transition-all ${offer.highlight
-                                        ? "bg-white text-slate-900 hover:bg-pink-50"
-                                        : "bg-slate-900 text-white hover:bg-pink-600"
+                                    <div className={`w-full rounded-full py-2.5 text-center text-sm font-bold tracking-wide transition-all border ${offer.highlight
+                                        ? "bg-white/10 text-white border-white/20"
+                                        : "bg-slate-50 text-slate-600 border-slate-100"
                                         }`}>
                                         {offer.action}
-                                    </Button>
+                                    </div>
                                 </CardFooter>
                             </Card>
                         ))}
@@ -212,9 +212,9 @@ export default function RatesPage() {
                                     <span className="text-5xl font-extrabold text-purple-600 block mb-1">{groupRate.price}</span>
                                     <span className="text-slate-500 font-serif">{groupRate.period}</span>
                                 </div>
-                                <Button className="w-full rounded-full h-12 text-lg bg-pink-600 hover:bg-pink-700 text-white">
+                                <div className="w-full rounded-full py-3 text-center text-lg font-bold bg-purple-50 text-purple-700">
                                     {groupRate.action}
-                                </Button>
+                                </div>
                             </div>
                         </div>
                     </Card>

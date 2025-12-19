@@ -46,7 +46,7 @@ export default function Home() {
             </div>
 
             {/* Right Column: Hero Carousel */}
-            <div className="relative h-[400px] lg:h-[600px] w-full hidden lg:block animate-in fade-in slide-in-from-right-8 duration-1000">
+            <div className="relative h-[300px] md:h-[400px] lg:h-[600px] w-full block animate-in fade-in slide-in-from-right-8 duration-1000">
               <HeroCarousel />
             </div>
           </div>

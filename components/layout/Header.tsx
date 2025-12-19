@@ -10,6 +10,7 @@ import {
   Sheet,
   SheetContent,
   SheetTrigger,
+  SheetTitle,
 } from "@/components/ui/sheet"
 import { Separator } from "@/components/ui/separator"
 
@@ -71,10 +72,10 @@ export function Header() {
 
         {/* CTA - Right */}
         <div className="hidden md:flex flex-1 justify-end gap-4">
-          <Link href="https://www.instagram.com/maman_billeentete/" target="_blank" className="p-2 text-slate-600 hover:text-primary hover:bg-slate-100 rounded-full transition-all">
+          <Link href="https://www.instagram.com/maman_billeentete/" target="_blank" className="p-2 text-pink-600 hover:bg-slate-100 rounded-full transition-all">
             <Instagram className="h-5 w-5" />
           </Link>
-          <Link href="https://www.youtube.com/@MamanBille-en-tete" target="_blank" className="p-2 text-slate-600 hover:text-red-600 hover:bg-slate-100 rounded-full transition-all">
+          <Link href="https://www.youtube.com/@MamanBille-en-tete" target="_blank" className="p-2 text-red-600 hover:bg-slate-100 rounded-full transition-all">
             <Youtube className="h-5 w-5" />
           </Link>
         </div>
@@ -88,19 +89,31 @@ export function Header() {
                 <span className="sr-only">Ouvrir le menu</span>
               </Button>
             </SheetTrigger>
-            <SheetContent side="right">
-              <div className="flex flex-col gap-6 mt-8 font-sans">
+            <SheetContent side="right" className="bg-white/95 backdrop-blur-sm">
+              <SheetTitle className="sr-only">Menu de navigation</SheetTitle>
+              <div className="flex flex-col gap-6 mt-12 px-2 font-sans">
                 {navigation.map((item) => (
                   <Link
                     key={item.name}
                     href={item.href}
-                    className="text-lg font-medium hover:text-primary transition-colors"
+                    className="text-xl font-medium text-slate-800 hover:text-primary transition-colors py-2 px-4 rounded-lg hover:bg-slate-50"
                   >
                     {item.name}
                   </Link>
                 ))}
-                <Separator />
-                <Button asChild className="w-full rounded-full">
+                <Separator className="my-2" />
+
+                {/* Mobile Social Icons */}
+                <div className="flex gap-6 items-center justify-center py-4">
+                  <Link href="https://www.instagram.com/maman_billeentete/" target="_blank" className="p-3 bg-pink-50 rounded-full text-pink-600 hover:bg-pink-100 transition-colors transform hover:scale-110">
+                    <Instagram className="h-7 w-7" />
+                  </Link>
+                  <Link href="https://www.youtube.com/@MamanBille-en-tete" target="_blank" className="p-3 bg-red-50 rounded-full text-red-600 hover:bg-red-100 transition-colors transform hover:scale-110">
+                    <Youtube className="h-7 w-7" />
+                  </Link>
+                </div>
+
+                <Button asChild className="w-full rounded-full h-12 text-lg shadow-md mt-4">
                   <Link href="/contact">Me contacter</Link>
                 </Button>
               </div>
