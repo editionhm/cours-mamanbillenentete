@@ -78,7 +78,7 @@ const groupRate = {
     period: "/h par élève",
     description: "Apprendre ensemble, s'entraider et progresser.",
     features: [
-        "Petits groupes (4 max)",
+        "4 élèves minimum",
         "Dynamique de groupe positive",
         "Exercices ludiques et interactifs",
         "Entraide & Motivation"

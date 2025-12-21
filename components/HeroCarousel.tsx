@@ -54,12 +54,12 @@ export function HeroCarousel() {
                 <CarouselContent className="h-full">
                     {carouselImages.map((image, index) => (
                         <CarouselItem key={index} className="h-full">
-                            <div className="relative h-full w-full aspect-[4/3] lg:aspect-auto lg:h-[600px] bg-slate-50">
+                            <div className="relative h-full w-full bg-slate-50">
                                 <Image
                                     src={image.src}
                                     alt={image.alt}
                                     fill
-                                    className={image.fit === "contain" ? "object-contain p-4" : "object-cover"}
+                                    className="object-cover"
                                     priority={index === 0}
                                     quality={100}
                                 />
