@@ -9,7 +9,7 @@ export default function JsonLd() {
             "https://www.instagram.com/maman_billeentete/",
             "https://www.youtube.com/@MamanBille-en-tete"
         ],
-        "description": "Cours particuliers de français, coaching scolaire et préparation aux concours (CRPE, CAPES). Pédagogie bienveillante et exigeante.",
+        "description": "Cours particuliers de français, coaching scolaire et préparation aux concours (CRPE, CAPES). Méthode rigoureuse et excellence scolaire.",
         "address": {
             "@type": "PostalAddress",
             "addressCountry": "FR"

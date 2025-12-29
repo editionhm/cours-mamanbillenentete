@@ -48,7 +48,7 @@ export default function AboutPage() {
                                 <span className="p-3 bg-purple-50 rounded-2xl text-purple-600 mb-1">
                                     <Sparkles className="h-8 w-8" />
                                 </span>
-                                Ma Méthodologie
+                                Ma Méthode
                             </h2>
                             <div className="prose prose-slate dark:prose-invert space-y-4 text-slate-600 font-serif">
                                 <p className="text-lg leading-relaxed">

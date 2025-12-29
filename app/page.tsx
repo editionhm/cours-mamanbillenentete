@@ -19,7 +19,7 @@ export default function Home() {
             {/* Left Column: Text Content */}
             <div className="flex flex-col items-center text-center space-y-6">
               <span className="block w-full text-center text-sm md:text-base font-semibold uppercase tracking-[0.2em] text-slate-500 animate-in fade-in slide-in-from-bottom-4 duration-700">
-                L'excellence scolaire par la bienveillance
+                L'excellence scolaire
               </span>
               <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight text-slate-800 dark:text-slate-100 font-sans leading-tight">
                 <span className="bg-clip-text text-transparent bg-gradient-to-r from-pink-600 to-purple-600 italic relative inline-block">
@@ -28,7 +28,7 @@ export default function Home() {
               </h1>
               <p className="max-w-xl text-slate-600 dark:text-slate-300 text-lg md:text-xl leading-relaxed font-serif text-center">
                 Bienvenue dans un espace dédié à la réussite et à l'épanouissement scolaire de votre enfant.
-                Nous allions <strong>rigueur académique</strong> et <strong>approche bienveillante</strong> pour révéler le potentiel de chaque élève.
+                Nous allions <strong>savoir académique</strong> et <strong>méthode rigoureuse</strong> pour construire le savoir de chaque élève.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 pt-4 justify-center">
                 <Button asChild size="lg" className="rounded-full px-8 text-lg h-14 shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all bg-white text-slate-900 border-2 border-slate-200 hover:border-pink-200 hover:bg-pink-50">
@@ -81,7 +81,7 @@ export default function Home() {
                     "Enseignante en Collège et Lycée",
                     "Formatrice académique (PAF)",
                     "Membre de jurys de concours (CRPE, CAPES)",
-                    "Expertise en pédagogie différenciée"
+                    "Experte en pédagogie différenciée"
                   ].map((item, i) => (
                     <li key={i} className="flex items-start gap-4 text-slate-600 font-serif text-lg">
                       <div className="mt-1 p-1 bg-green-100 rounded-full">
@@ -142,14 +142,14 @@ export default function Home() {
             <span className="text-secondary font-bold uppercase tracking-[0.2em] text-sm mb-2 block">NOTRE APPROCHE</span>
             <h2 className="text-3xl font-bold tracking-widest uppercase md:text-4xl mb-10 font-sans text-slate-900">UNE PÉDAGOGIE SUR MESURE</h2>
             <blockquote className="relative p-8 text-xl md:text-2xl italic font-serif text-slate-700 leading-relaxed bg-slate-50 rounded-3xl border border-slate-100">
-              "L'équipe de Maman Bille-en-Tête ne se contente pas de dispenser des cours, elle transmet une <span className="text-pink-600 font-semibold">méthode</span>, une <span className="text-pink-600 font-semibold">structure</span>, des outils et une disponibilité même hors cours."
+              "l'équipe de Maman Bille en tête ne se contente pas de dispenser des cours, elle s'appuie sur une méthode rigoureuse, procure des outils efficaces et se montre disponible au-delà du temps scolaire"
             </blockquote>
           </div>
 
           <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
             {[
-              { title: "Méthodologie & Structure", icon: Sparkles, color: "text-purple-500", desc: "Apprendre à apprendre. Nous donnons les clés pour s'organiser, mémoriser et réussir durablement." },
-              { title: "Distanciel & Outils", icon: Laptop, color: "text-pink-500", desc: "Utilisation d'outils numériques modernes pour des cours interactifs et engageants, où que vous soyez." },
+              { title: "Méthode & Structure", icon: Sparkles, color: "text-purple-500", desc: "Apprendre à apprendre. Nous donnons les clés pour s'organiser, mémoriser et réussir durablement." },
+              { title: "Cours interactifs & efficaces", icon: Laptop, color: "text-pink-500", desc: "Utilisation d'outils numériques modernes pour des cours interactifs et efficaces, où que vous soyez." },
               { title: "Ateliers IEF & Familles", icon: User, color: "text-rose-500", desc: "Instruction En Famille : accompagnement complet des familles (supports, programmes, ateliers sur mesure)." }
             ].map((feature, i) => (
               <Card key={i} className="group bg-pink-50/30 border-none shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 rounded-2xl overflow-hidden">
@@ -178,7 +178,7 @@ export default function Home() {
           </svg>
         </div>
         <div className="container relative px-4 md:px-6 mx-auto text-center space-y-10">
-          <h2 className="text-3xl font-bold tracking-tight md:text-5xl font-sans text-white">Prêt à révéler le potentiel de votre enfant ?</h2>
+          <h2 className="text-3xl font-bold tracking-tight md:text-5xl font-sans text-white">Prêt à donner une instruction de qualité à votre enfant ?</h2>
           <p className="max-w-2xl mx-auto text-white/90 md:text-2xl font-serif">
             Contactez-nous pour échanger sur vos besoins et définir ensemble le meilleur accompagnement.
           </p>

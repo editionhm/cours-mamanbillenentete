@@ -15,7 +15,7 @@ import {
 const carouselImages = [
     {
         src: "/images/citation.png",
-        alt: "Une pédagogie bienveillante",
+        alt: "L'excellence scolaire",
         fit: "cover", // Special case for text image
     },
     {
