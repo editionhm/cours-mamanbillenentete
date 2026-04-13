@@ -22,7 +22,7 @@ export default function Home() {
                 L'excellence scolaire
               </span>
               <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight text-slate-800 dark:text-slate-100 font-sans leading-tight">
-                <span className="bg-clip-text text-transparent bg-gradient-to-r from-pink-600 to-purple-600 italic relative inline-block">
+                <span className="text-primary italic relative inline-block">
                   Maman <br /> Bille-en-Tête
                 </span>
               </h1>
@@ -31,13 +31,13 @@ export default function Home() {
                 Nous allions <strong>savoir académique</strong> et <strong>méthode rigoureuse</strong> pour construire le savoir de chaque élève.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 pt-4 justify-center">
-                <Button asChild size="lg" className="rounded-full px-8 text-lg h-14 shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all bg-white text-slate-900 border-2 border-slate-200 hover:border-pink-200 hover:bg-pink-50">
+                <Button asChild size="lg" className="rounded-full px-8 text-lg h-14 shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all bg-white text-slate-900 border-2 border-slate-200 hover:border-primary/20 hover:bg-primary/5">
                   <Link href="/rates">
                     Découvrir nos offres
                     <ArrowRight className="ml-2 h-5 w-5" />
                   </Link>
                 </Button>
-                <Button asChild size="lg" className="rounded-full px-8 text-lg h-14 shadow-lg hover:shadow-xl hover:-translate-y-0.5 transition-all bg-gradient-to-r from-pink-500 to-purple-600 text-white border-none hover:opacity-90 ring-offset-2 focus:ring-2 ring-pink-200">
+                <Button asChild size="lg" className="rounded-full px-8 text-lg h-14 shadow-lg hover:shadow-xl hover:-translate-y-0.5 transition-all bg-primary text-primary-foreground border-none hover:bg-primary/90 focus:ring-2 ring-primary/20 ring-offset-2">
                   <Link href="/contact">
                     Contact
                   </Link>
@@ -64,9 +64,9 @@ export default function Home() {
           <div className="grid gap-8 lg:grid-cols-2 lg:gap-16 items-start">
             {/* Mon Parcours */}
             <Card className="border-none shadow-lg bg-white h-full rounded-2xl hover:shadow-xl transition-all duration-300 ring-1 ring-slate-100">
-              <CardHeader className="bg-gradient-to-br from-primary/5 to-transparent pb-8 pt-8 px-8">
+              <CardHeader className="bg-gradient-to-br from-secondary/30 to-transparent pb-8 pt-8 px-8">
                 <div className="flex items-center gap-5">
-                  <div className="p-3 bg-white rounded-2xl shadow-sm text-pink-600">
+                  <div className="p-3 bg-white rounded-2xl shadow-sm text-primary">
                     <User className="h-8 w-8" />
                   </div>
                   <CardTitle className="text-3xl font-sans text-slate-800">Mon parcours</CardTitle>
@@ -84,8 +84,8 @@ export default function Home() {
                     "Experte en pédagogie différenciée"
                   ].map((item, i) => (
                     <li key={i} className="flex items-start gap-4 text-slate-600 font-serif text-lg">
-                      <div className="mt-1 p-1 bg-green-100 rounded-full">
-                        <CheckCircle2 className="h-4 w-4 text-green-600 shrink-0" />
+                      <div className="mt-1 p-1 bg-primary/10 rounded-full">
+                        <CheckCircle2 className="h-4 w-4 text-primary shrink-0" />
                       </div>
                       <span>{item}</span>
                     </li>
@@ -94,13 +94,12 @@ export default function Home() {
               </CardContent>
             </Card>
 
-            {/* Mes Expertises - Removed Ateliers Maternelle */}
             {/* Mes Expertises - Split into 2 cards for balance */}
             <div className="grid gap-8">
               <Card className="border-none shadow-lg hover:shadow-xl transition-all rounded-2xl overflow-hidden group bg-white ring-1 ring-slate-100">
                 <CardHeader className="px-8 pt-8 pb-4">
                   <CardTitle className="text-2xl flex items-center gap-4 font-sans text-slate-800">
-                    <div className="p-2.5 bg-purple-50 rounded-xl text-purple-600 group-hover:bg-purple-600 group-hover:text-white transition-colors duration-300">
+                    <div className="p-2.5 bg-slate-50 rounded-xl text-slate-600 group-hover:bg-slate-800 group-hover:text-white transition-colors duration-300">
                       <BookOpen className="h-6 w-6" />
                     </div>
                     Français & Littérature
@@ -117,7 +116,7 @@ export default function Home() {
               <Card className="border-none shadow-lg hover:shadow-xl transition-all rounded-2xl overflow-hidden group bg-white ring-1 ring-slate-100">
                 <CardHeader className="px-8 pt-8 pb-4">
                   <CardTitle className="text-2xl flex items-center gap-4 font-sans text-slate-800">
-                    <div className="p-2.5 bg-orange-50 rounded-xl text-orange-600 group-hover:bg-orange-600 group-hover:text-white transition-colors duration-300">
+                    <div className="p-2.5 bg-slate-50 rounded-xl text-slate-600 group-hover:bg-slate-800 group-hover:text-white transition-colors duration-300">
                       <Sparkles className="h-6 w-6" />
                     </div>
                     Concours & Examens
@@ -148,11 +147,11 @@ export default function Home() {
 
           <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
             {[
-              { title: "Méthode & Structure", icon: Sparkles, color: "text-purple-500", desc: "Apprendre à apprendre. Nous donnons les clés pour s'organiser, mémoriser et réussir durablement." },
-              { title: "Cours interactifs & efficaces", icon: Laptop, color: "text-pink-500", desc: "Utilisation d'outils numériques modernes pour des cours interactifs et efficaces, où que vous soyez." },
-              { title: "Ateliers IEF & Familles", icon: User, color: "text-rose-500", desc: "Instruction En Famille : accompagnement complet des familles (supports, programmes, ateliers sur mesure)." }
+              { title: "Méthode & Structure", icon: Sparkles, color: "text-slate-700", desc: "Apprendre à apprendre. Nous donnons les clés pour s'organiser, mémoriser et réussir durablement." },
+              { title: "Cours interactifs & efficaces", icon: Laptop, color: "text-slate-700", desc: "Utilisation d'outils numériques modernes pour des cours interactifs et efficaces, où que vous soyez." },
+              { title: "Ateliers IEF & Familles", icon: User, color: "text-slate-700", desc: "Instruction En Famille : accompagnement complet des familles (supports, programmes, ateliers sur mesure)." }
             ].map((feature, i) => (
-              <Card key={i} className="group bg-pink-50/30 border-none shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 rounded-2xl overflow-hidden">
+              <Card key={i} className="group bg-secondary/30 border-none shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 rounded-2xl overflow-hidden">
                 <CardHeader className="p-8 pb-4 flex flex-col items-center text-center">
                   <div className="mb-4 inline-block p-4 rounded-2xl bg-white shadow-sm ring-1 ring-slate-100 group-hover:scale-110 transition-transform duration-300">
                     <feature.icon className={`h-8 w-8 ${feature.color}`} />

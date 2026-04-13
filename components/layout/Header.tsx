@@ -17,6 +17,7 @@ import { Separator } from "@/components/ui/separator"
 const navigation = [
   { name: "Accueil", href: "/" },
   { name: "A propos", href: "/about" },
+  { name: "IEF", href: "/ief" },
   { name: "Nos tarifs", href: "/rates" },
   { name: "Contact", href: "/contact" },
 ]
@@ -72,10 +73,10 @@ export function Header() {
 
         {/* CTA - Right */}
         <div className="hidden md:flex flex-1 justify-end gap-4">
-          <Link href="https://www.instagram.com/maman_billeentete/" target="_blank" className="p-2 text-pink-600 hover:bg-slate-100 rounded-full transition-all">
+          <Link href="https://www.instagram.com/maman_billeentete/" target="_blank" className="p-2 text-slate-600 hover:text-primary hover:bg-slate-100 rounded-full transition-all">
             <Instagram className="h-5 w-5" />
           </Link>
-          <Link href="https://www.youtube.com/@MamanBille-en-tete" target="_blank" className="p-2 text-red-600 hover:bg-slate-100 rounded-full transition-all">
+          <Link href="https://www.youtube.com/@MamanBille-en-tete" target="_blank" className="p-2 text-slate-600 hover:text-primary hover:bg-slate-100 rounded-full transition-all">
             <Youtube className="h-5 w-5" />
           </Link>
         </div>
@@ -105,10 +106,10 @@ export function Header() {
 
                 {/* Mobile Social Icons */}
                 <div className="flex gap-6 items-center justify-center py-4">
-                  <Link href="https://www.instagram.com/maman_billeentete/" target="_blank" className="p-3 bg-pink-50 rounded-full text-pink-600 hover:bg-pink-100 transition-colors transform hover:scale-110">
+                  <Link href="https://www.instagram.com/maman_billeentete/" target="_blank" className="p-3 bg-slate-50 rounded-full text-slate-600 hover:text-primary hover:bg-slate-100 transition-colors transform hover:scale-110">
                     <Instagram className="h-7 w-7" />
                   </Link>
-                  <Link href="https://www.youtube.com/@MamanBille-en-tete" target="_blank" className="p-3 bg-red-50 rounded-full text-red-600 hover:bg-red-100 transition-colors transform hover:scale-110">
+                  <Link href="https://www.youtube.com/@MamanBille-en-tete" target="_blank" className="p-3 bg-slate-50 rounded-full text-slate-600 hover:text-primary hover:bg-slate-100 transition-colors transform hover:scale-110">
                     <Youtube className="h-7 w-7" />
                   </Link>
                 </div>
