@@ -9,7 +9,7 @@ const resend = new Resend(process.env.RESEND_API_KEY);
 
 const ContactFormSchema = z.object({
     firstname: z.string().min(2, { message: "Le prénom doit contenir au moins 2 caractères" }),
-    lastname: z.string().min(2, { message: "Le nom doit contenir au moins 2 caractères" }),
+    lastname: z.string().min(2, { message: "Le nom  doit contenir au moins 2 caractères" }),
     email: z.string().email({ message: "Email invalide" }),
     subject: z.string().min(5, { message: "L'objet doit contenir au moins 5 caractères" }),
     message: z.string().min(10, { message: "Le message doit contenir au moins 10 caractères" }),
@@ -49,7 +49,7 @@ export async function sendEmail(prevState: ContactFormState, formData: FormData)
         if (process.env.RESEND_API_KEY) {
             const data = await resend.emails.send({
                 from: 'Contact Site <onboarding@resend.dev>', // Ou votre domaine vérifié
-                to: ['omnigpt@gmail.com'], // REMPLACEZ PAR VOTRE EMAIL (ex: contact@maman...)
+                to: ['mamanbilleentete@gmail.com'],
                 subject: `[Contact] ${subject}`,
                 replyTo: email,
                 html: `

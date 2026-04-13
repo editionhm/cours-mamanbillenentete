@@ -35,7 +35,7 @@ export default function ContactPage() {
                     {/* Main Email CTA Card */}
                     <Card className="border-none shadow-2xl ring-1 ring-slate-100 bg-white rounded-3xl overflow-hidden hover:shadow-3xl transition-shadow duration-300">
                         <CardContent className="p-10 md:p-14 flex flex-col items-center text-center space-y-8">
-                            <div className="p-6 bg-primary/10 rounded-full mb-2 animate-in zoom-in duration-500">
+                            <div className="p-6 bg-primary/10 rounded-sm mb-2 animate-in zoom-in duration-500">
                                 <Mail className="h-16 w-16 text-primary" />
                             </div>
 
@@ -53,7 +53,7 @@ export default function ContactPage() {
                                 </p>
                             </div>
 
-                            <Button asChild size="lg" className="h-16 px-12 text-xl rounded-full gap-3 shadow-xl hover:shadow-2xl hover:scale-105 transition-all duration-300 bg-gradient-to-r from-pink-500 to-rose-600 hover:from-pink-600 hover:to-rose-700 text-white border-none ring-offset-2 hover:ring-2 ring-pink-200">
+                            <Button asChild size="lg" className="h-16 px-12 text-xl rounded-sm gap-3 shadow-xl hover:shadow-2xl hover:scale-105 transition-all duration-300 bg-primary hover:bg-primary/90 text-white border-none ring-offset-2 hover:ring-2 ring-primary/20">
                                 <a href="mailto:mamanbilleentete@gmail.com">
                                     <Mail className="h-6 w-6 mr-2 animate-pulse" />
                                     M'écrire maintenant

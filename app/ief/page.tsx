@@ -86,7 +86,7 @@ export default function IEFPage() {
                 </ul>
               </CardContent>
               <CardFooter className="px-6 pb-8">
-                <Button asChild className="w-full h-12 rounded-xl text-md font-semibold bg-primary hover:bg-primary/90 text-white">
+                <Button asChild className="w-full h-12 rounded-sm text-md font-semibold bg-primary hover:bg-primary/90 text-white">
                   <Link href="/contact?sujet=Formule 1 IEF">Choisir cette formule</Link>
                 </Button>
               </CardFooter>
@@ -94,7 +94,7 @@ export default function IEFPage() {
 
             {/* Formule 2 */}
             <Card className="flex flex-col border-none shadow-xl hover:shadow-2xl transition-all duration-300 rounded-2xl ring-2 ring-primary/20 bg-white relative scale-100 lg:scale-105 z-10">
-              <div className="absolute top-0 right-0 transform translate-x-2 -translate-y-2 bg-primary text-white text-xs font-bold uppercase py-1 px-3 rounded-full shadow-md">
+              <div className="absolute top-0 right-0 transform translate-x-2 -translate-y-2 bg-primary text-white text-xs font-bold uppercase py-1 px-3 rounded-sm shadow-md">
                 Populaire
               </div>
               <CardHeader className="bg-primary/5 pb-6 pt-8 rounded-t-2xl">
@@ -122,7 +122,7 @@ export default function IEFPage() {
                 </ul>
               </CardContent>
               <CardFooter className="px-6 pb-8">
-                <Button asChild className="w-full h-12 rounded-xl text-md font-semibold bg-primary hover:bg-primary/90 text-white shadow-lg">
+                <Button asChild className="w-full h-12 rounded-sm text-md font-semibold bg-primary hover:bg-primary/90 text-white shadow-lg">
                   <Link href="/contact?sujet=Formule 2 IEF">Choisir cette formule</Link>
                 </Button>
               </CardFooter>
@@ -156,7 +156,7 @@ export default function IEFPage() {
                 </ul>
               </CardContent>
               <CardFooter className="px-6 pb-8">
-                <Button asChild variant="outline" className="w-full h-12 rounded-xl text-md font-semibold border-2 border-primary/20 text-slate-800 hover:bg-primary/5 hover:text-primary">
+                <Button asChild variant="outline" className="w-full h-12 rounded-sm text-md font-semibold border-2 border-primary/20 text-slate-800 hover:bg-primary/5 hover:text-primary">
                   <Link href="/contact?sujet=Formule 3 IEF">Choisir cette formule</Link>
                 </Button>
               </CardFooter>
@@ -186,7 +186,7 @@ export default function IEFPage() {
                 </ul>
               </CardContent>
               <CardFooter className="px-6 pb-8">
-                <Button asChild variant="outline" className="w-full h-12 rounded-xl text-md font-semibold">
+                <Button asChild variant="outline" className="w-full h-12 rounded-sm text-md font-semibold">
                   <Link href="/contact?sujet=Formule 4 IEF RAPO">Choisir</Link>
                 </Button>
               </CardFooter>
@@ -229,7 +229,7 @@ export default function IEFPage() {
                 </div>
               </CardContent>
               <CardFooter className="px-6 pb-8 bg-slate-50 rounded-b-2xl relative -mt-4 pt-0 border-none">
-                <Button asChild className="w-full h-12 rounded-xl text-md font-semibold bg-slate-800 hover:bg-slate-900 text-white">
+                <Button asChild className="w-full h-12 rounded-sm text-md font-semibold bg-slate-800 hover:bg-slate-900 text-white">
                   <Link href="/contact?sujet=Formule 5 IEF RAPO et Projet">Choisir cette formule complète</Link>
                 </Button>
               </CardFooter>
@@ -273,7 +273,7 @@ export default function IEFPage() {
                 <p className="text-lg text-slate-600 font-serif mb-8">
                   Choisissez la formule qui vous correspond et avancez sereinement dans votre projet d'instruction en famille.
                 </p>
-                <Button asChild size="lg" className="rounded-full px-8 text-lg h-14 shadow-lg hover:shadow-xl hover:-translate-y-0.5 transition-all bg-primary text-primary-foreground border-none hover:bg-primary/90 focus:ring-2 ring-primary/20 ring-offset-2">
+                <Button asChild size="lg" className="rounded-sm px-8 text-lg h-14 shadow-lg hover:shadow-xl hover:-translate-y-0.5 transition-all bg-primary text-primary-foreground border-none hover:bg-primary/90 focus:ring-2 ring-primary/20 ring-offset-2">
                   <Link href="/contact">
                     Me contacter
                     <ArrowRight className="ml-2 h-5 w-5" />

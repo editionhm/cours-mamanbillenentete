@@ -31,13 +31,13 @@ export default function Home() {
                 Nous allions <strong>savoir académique</strong> et <strong>méthode rigoureuse</strong> pour construire le savoir de chaque élève.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 pt-4 justify-center">
-                <Button asChild size="lg" className="rounded-full px-8 text-lg h-14 shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all bg-white text-slate-900 border-2 border-slate-200 hover:border-primary/20 hover:bg-primary/5">
+                <Button asChild size="lg" className="rounded-sm px-8 text-lg h-14 shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all bg-white text-slate-900 border-2 border-slate-200 hover:border-primary/20 hover:bg-primary/5">
                   <Link href="/rates">
                     Découvrir nos offres
                     <ArrowRight className="ml-2 h-5 w-5" />
                   </Link>
                 </Button>
-                <Button asChild size="lg" className="rounded-full px-8 text-lg h-14 shadow-lg hover:shadow-xl hover:-translate-y-0.5 transition-all bg-primary text-primary-foreground border-none hover:bg-primary/90 focus:ring-2 ring-primary/20 ring-offset-2">
+                <Button asChild size="lg" className="rounded-sm px-8 text-lg h-14 shadow-lg hover:shadow-xl hover:-translate-y-0.5 transition-all bg-primary text-primary-foreground border-none hover:bg-primary/90 focus:ring-2 ring-primary/20 ring-offset-2">
                   <Link href="/contact">
                     Contact
                   </Link>
@@ -84,7 +84,7 @@ export default function Home() {
                     "Experte en pédagogie différenciée"
                   ].map((item, i) => (
                     <li key={i} className="flex items-start gap-4 text-slate-600 font-serif text-lg">
-                      <div className="mt-1 p-1 bg-primary/10 rounded-full">
+                      <div className="mt-1 p-1 bg-primary/10 rounded-sm">
                         <CheckCircle2 className="h-4 w-4 text-primary shrink-0" />
                       </div>
                       <span>{item}</span>

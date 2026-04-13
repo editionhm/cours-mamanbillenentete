@@ -82,10 +82,10 @@ export default function AboutPage() {
                                 DOMAINES D'EXPERTISE
                             </h3>
                             <div className="flex flex-wrap gap-3">
-                                <Badge variant="secondary" className="px-4 py-2 text-sm rounded-full bg-pink-50 text-pink-600 border-2 border-pink-100 hover:bg-pink-100 hover:text-pink-700 transition-colors">Lettres Modernes</Badge>
-                                <Badge variant="secondary" className="px-4 py-2 text-sm rounded-full bg-orange-50 text-orange-600 hover:bg-orange-100 transition-colors">Coaching CRPE/CAPES</Badge>
-                                <Badge variant="outline" className="px-4 py-2 text-sm rounded-full border-slate-200 text-slate-600">Pédagogie Active</Badge>
-                                <Badge variant="outline" className="px-4 py-2 text-sm rounded-full border-slate-200 text-slate-600">Préparation DNB/BAC</Badge>
+                                <Badge variant="secondary" className="px-4 py-2 text-sm rounded-sm bg-pink-50 text-pink-600 border-2 border-pink-100 hover:bg-pink-100 hover:text-pink-700 transition-colors">Lettres Modernes</Badge>
+                                <Badge variant="secondary" className="px-4 py-2 text-sm rounded-sm bg-orange-50 text-orange-600 hover:bg-orange-100 transition-colors">Coaching CRPE/CAPES</Badge>
+                                <Badge variant="outline" className="px-4 py-2 text-sm rounded-sm border-slate-200 text-slate-600">Pédagogie Active</Badge>
+                                <Badge variant="outline" className="px-4 py-2 text-sm rounded-sm border-slate-200 text-slate-600">Préparation DNB/BAC</Badge>
                             </div>
                         </div>
                     </div>

@@ -161,7 +161,7 @@ export default function RatesPage() {
                                     <ul className="space-y-3">
                                         {offer.features.map((feature) => (
                                             <li key={feature} className="flex items-start gap-3 text-sm">
-                                                <div className={`p-1 rounded-full mt-0.5 shrink-0 ${offer.highlight ? 'bg-white/20' : 'bg-pink-50'}`}>
+                                                <div className={`p-1 rounded-sm mt-0.5 shrink-0 ${offer.highlight ? 'bg-white/20' : 'bg-primary/10 text-primary'}`}>
                                                     <Check className={`h-3 w-3 ${offer.highlight ? 'text-white' : 'text-pink-600'}`} />
                                                 </div>
                                                 <span className={`font-serif leading-tight text-left ${offer.highlight ? 'text-slate-200' : 'text-slate-600'}`}>
@@ -172,7 +172,7 @@ export default function RatesPage() {
                                     </ul>
                                 </CardContent>
                                 <CardFooter className="p-8 pt-0">
-                                    <div className={`w-full rounded-full py-2.5 text-center text-sm font-bold tracking-wide transition-all border ${offer.highlight
+                                    <div className={`w-full rounded-sm py-2.5 text-center text-sm font-bold tracking-wide transition-all border ${offer.highlight
                                         ? "bg-white/10 text-white border-white/20"
                                         : "bg-slate-50 text-slate-600 border-slate-100"
                                         }`}>
@@ -212,7 +212,7 @@ export default function RatesPage() {
                                     <span className="text-5xl font-extrabold text-purple-600 block mb-1">{groupRate.price}</span>
                                     <span className="text-slate-500 font-serif">{groupRate.period}</span>
                                 </div>
-                                <div className="w-full rounded-full py-3 text-center text-lg font-bold bg-purple-50 text-purple-700">
+                                <div className="w-full rounded-sm py-3 text-center text-lg font-bold bg-primary/10 text-primary">
                                     {groupRate.action}
                                 </div>
                             </div>
@@ -227,7 +227,7 @@ export default function RatesPage() {
                         <p className="text-slate-300 font-serif text-lg mb-8 max-w-2xl mx-auto">
                             N'hésitez pas à nous contacter pour établir un devis personnalisé ou pour discuter de la formule la plus adaptée à votre enfant.
                         </p>
-                        <Button asChild size="lg" className="rounded-full bg-white text-slate-900 hover:bg-slate-100 px-8 h-14 text-lg">
+                        <Button asChild size="lg" className="rounded-sm bg-white text-slate-900 hover:bg-slate-100 px-8 h-14 text-lg">
                             <Link href="/contact">Me contacter</Link>
                         </Button>
                     </div>
