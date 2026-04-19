@@ -40,24 +40,24 @@ export default function ContactPage() {
                             </div>
 
                             <div className="space-y-4">
-                                <h2 className="text-3xl md:text-4xl font-bold font-sans text-slate-800">
+                                <h2 className="text-3xl md:text-4xl font-extrabold font-serif text-slate-900">
                                     M'envoyer un email
                                 </h2>
                                 <div className="py-4">
-                                    <span className="text-xl md:text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-pink-600 to-purple-600 font-sans selection:bg-pink-100">
+                                    <span className="text-xl md:text-2xl font-bold text-slate-900 font-sans border-b-2 border-primary/30 pb-1">
                                         mamanbilleentete@gmail.com
                                     </span>
                                 </div>
-                                <p className="text-lg text-slate-600 font-serif max-w-lg mx-auto leading-relaxed">
+                                <p className="text-lg text-slate-600 font-serif font-medium max-w-lg mx-auto leading-relaxed">
                                     Le moyen le plus simple et le plus direct pour échanger sur le profil de votre enfant.
                                 </p>
                             </div>
 
-                            <Button asChild size="lg" className="h-16 px-12 text-xl rounded-sm gap-3 shadow-xl hover:shadow-2xl hover:scale-105 transition-all duration-300 bg-primary hover:bg-primary/90 text-white border-none ring-offset-2 hover:ring-2 ring-primary/20">
+                            <Button asChild size="lg" className="h-[72px] px-14 text-xl font-bold tracking-wide rounded-sm gap-4 shadow-xl hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 bg-primary hover:bg-primary/90 text-white border-none ring-offset-2 hover:ring-4 ring-primary/30 flex items-center justify-center">
                                 <a href="mailto:mamanbilleentete@gmail.com">
-                                    <Mail className="h-6 w-6 mr-2 animate-pulse" />
-                                    M'écrire maintenant
-                                    <ArrowRight className="h-6 w-6 ml-1" />
+                                    <Mail className="h-7 w-7 animate-pulse" />
+                                    <span>M'ÉCRIRE MAINTENANT</span>
+                                    <ArrowRight className="h-6 w-6 transition-transform group-hover:translate-x-2" />
                                 </a>
                             </Button>
 
@@ -86,7 +86,7 @@ export default function ContactPage() {
                                 href="https://www.instagram.com/maman_billeentete/"
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="p-3 bg-pink-50 rounded-xl text-pink-600 hover:bg-pink-600 hover:text-white transition-all duration-300 hover:scale-110"
+                                className="p-3 bg-slate-100 rounded-xl text-slate-600 hover:bg-primary hover:text-white transition-all duration-300 hover:scale-110 shadow-sm"
                                 aria-label="Instagram"
                             >
                                 <Instagram className="h-8 w-8" />
@@ -95,7 +95,7 @@ export default function ContactPage() {
                                 href="https://www.youtube.com/@MamanBille-en-tete"
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="p-3 bg-red-50 rounded-xl text-red-600 hover:bg-red-600 hover:text-white transition-all duration-300 hover:scale-110"
+                                className="p-3 bg-slate-100 rounded-xl text-slate-600 hover:bg-primary hover:text-white transition-all duration-300 hover:scale-110 shadow-sm"
                                 aria-label="YouTube"
                             >
                                 <Youtube className="h-8 w-8" />

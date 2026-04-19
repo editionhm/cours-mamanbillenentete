@@ -93,17 +93,14 @@ export default function IEFPage() {
             </Card>
 
             {/* Formule 2 */}
-            <Card className="flex flex-col border-none shadow-xl hover:shadow-2xl transition-all duration-300 rounded-2xl ring-2 ring-primary/20 bg-white relative scale-100 lg:scale-105 z-10">
-              <div className="absolute top-0 right-0 transform translate-x-2 -translate-y-2 bg-primary text-white text-xs font-bold uppercase py-1 px-3 rounded-sm shadow-md">
-                Populaire
-              </div>
-              <CardHeader className="bg-primary/5 pb-6 pt-8 rounded-t-2xl">
+            <Card className="flex flex-col border-none shadow-lg hover:shadow-xl transition-all duration-300 rounded-2xl ring-1 ring-slate-100 bg-white">
+              <CardHeader className="bg-secondary/20 pb-6 pt-8 rounded-t-2xl">
                 <span className="text-sm font-bold uppercase tracking-wider text-primary mb-2 block">Formule 2</span>
                 <CardTitle className="text-2xl font-sans text-slate-800">Accompagnement personnalisé</CardTitle>
                 <div className="mt-4 flex items-baseline text-4xl font-extrabold text-slate-900">
                   60 €
                 </div>
-                <p className="text-sm text-primary-foreground font-medium mt-2 bg-primary p-2 rounded-lg text-center">Objectif : structurer un dossier solide et cohérent.</p>
+                <p className="text-sm text-slate-600 font-medium mt-2 bg-white/60 p-2 rounded-lg text-center">Objectif : structurer un dossier solide et cohérent.</p>
               </CardHeader>
               <CardContent className="flex-1 pt-8 px-6 pb-8">
                 <ul className="space-y-4">
@@ -122,21 +119,27 @@ export default function IEFPage() {
                 </ul>
               </CardContent>
               <CardFooter className="px-6 pb-8">
-                <Button asChild className="w-full h-12 rounded-sm text-md font-semibold bg-primary hover:bg-primary/90 text-white shadow-lg">
+                <Button asChild className="w-full h-12 rounded-sm text-md font-semibold bg-primary hover:bg-primary/90 text-white">
                   <Link href="/contact?sujet=Formule 2 IEF">Choisir cette formule</Link>
                 </Button>
               </CardFooter>
             </Card>
 
             {/* Formule 3 */}
-            <Card className="flex flex-col border-none shadow-lg hover:shadow-xl transition-all duration-300 rounded-2xl ring-1 ring-slate-100 bg-white">
-              <CardHeader className="bg-secondary/20 pb-6 pt-8 rounded-t-2xl">
-                <span className="text-sm font-bold uppercase tracking-wider text-primary mb-2 block">Formule 3</span>
-                <CardTitle className="text-2xl font-sans text-slate-800">Accompagnement premium</CardTitle>
-                <div className="mt-4 flex items-baseline text-4xl font-extrabold text-slate-900">
+            <Card className="flex flex-col border-none shadow-2xl hover:shadow-3xl transition-all duration-300 rounded-2xl ring-4 ring-pink-500/20 bg-slate-900 text-white relative scale-100 lg:scale-105 z-10">
+              <div className="absolute top-0 inset-x-0 h-2 bg-gradient-to-r from-pink-500 to-purple-600 rounded-t-2xl" />
+              <div className="absolute top-4 right-4 animate-pulse">
+                <div className="bg-gradient-to-r from-pink-500 to-purple-600 text-white text-xs font-bold uppercase py-1 px-3 rounded-sm shadow-md flex items-center gap-1">
+                  <Heart className="w-3 h-3" /> Populaire
+                </div>
+              </div>
+              <CardHeader className="bg-white/5 pb-6 pt-8 rounded-t-2xl">
+                <span className="text-sm font-bold uppercase tracking-wider text-pink-400 mb-2 block">Formule 3</span>
+                <CardTitle className="text-2xl font-sans text-white">Accompagnement premium</CardTitle>
+                <div className="mt-4 flex items-baseline text-4xl font-extrabold text-white">
                   120 €
                 </div>
-                <p className="text-sm text-slate-600 font-medium mt-2 bg-white/60 p-2 rounded-lg text-center">Objectif : un dossier complet, prêt à être envoyé.</p>
+                <p className="text-sm text-slate-200 font-medium mt-2 bg-white/10 p-2 rounded-lg text-center">Objectif : un dossier complet, prêt à être envoyé.</p>
               </CardHeader>
               <CardContent className="flex-1 pt-8 px-6 pb-8">
                 <ul className="space-y-4">
@@ -148,15 +151,15 @@ export default function IEFPage() {
                     "Prise en charge des finitions",
                     "Disponibilité continue via WhatsApp"
                   ].map((item, i) => (
-                    <li key={i} className="flex items-start gap-3 text-slate-700 font-serif">
-                      <CheckCircle2 className="h-5 w-5 text-primary shrink-0 mt-0.5" />
-                      <span>{item}</span>
+                    <li key={i} className="flex items-start gap-3 text-slate-300 font-serif">
+                      <CheckCircle2 className="h-5 w-5 text-pink-500 shrink-0 mt-0.5" />
+                      <span className="text-white">{item}</span>
                     </li>
                   ))}
                 </ul>
               </CardContent>
               <CardFooter className="px-6 pb-8">
-                <Button asChild variant="outline" className="w-full h-12 rounded-sm text-md font-semibold border-2 border-primary/20 text-slate-800 hover:bg-primary/5 hover:text-primary">
+                <Button asChild className="w-full h-12 rounded-sm text-md font-semibold bg-gradient-to-r from-pink-500 to-purple-600 hover:from-pink-600 hover:to-purple-700 text-white border-none shadow-lg">
                   <Link href="/contact?sujet=Formule 3 IEF">Choisir cette formule</Link>
                 </Button>
               </CardFooter>
@@ -194,15 +197,15 @@ export default function IEFPage() {
 
             {/* Formule 5 (RAPO + Projet) */}
             <Card className="flex flex-col border-none shadow-lg hover:shadow-xl transition-all duration-300 rounded-2xl ring-1 ring-slate-100 bg-white md:col-span-2 lg:col-span-2">
-              <CardHeader className="bg-slate-800 text-white pb-6 pt-8 rounded-t-2xl">
-                <span className="text-sm font-bold uppercase tracking-wider text-slate-300 mb-2 block">Formule 5</span>
-                <CardTitle className="text-2xl font-sans text-white">RAPO + projet éducatif</CardTitle>
-                <div className="mt-4 flex items-baseline text-4xl font-extrabold text-white">
+              <CardHeader className="bg-secondary/20 pb-6 pt-8 rounded-t-2xl">
+                <span className="text-sm font-bold uppercase tracking-wider text-primary mb-2 block">Formule 5</span>
+                <CardTitle className="text-2xl font-sans text-slate-800">RAPO + projet éducatif</CardTitle>
+                <div className="mt-4 flex items-baseline text-4xl font-extrabold text-slate-900">
                   100 €
                 </div>
-                <p className="text-sm text-slate-200 font-medium mt-2 bg-slate-900 p-2 rounded-lg text-center">Objectif : un dossier renforcé et cohérent.</p>
+                <p className="text-sm text-slate-600 font-medium mt-2 bg-white/60 p-2 rounded-lg text-center">Objectif : un dossier renforcé et cohérent.</p>
               </CardHeader>
-              <CardContent className="flex-1 pt-8 px-6 pb-8 bg-slate-50 rounded-b-2xl">
+              <CardContent className="flex-1 pt-8 px-6 pb-8">
                 <div className="grid sm:grid-cols-2 gap-4">
                   <ul className="space-y-4">
                     {[
@@ -221,15 +224,15 @@ export default function IEFPage() {
                       "Alignement total des arguments de recours"
                     ].map((item, i) => (
                       <li key={i} className="flex items-start gap-3 text-slate-700 font-serif">
-                        <ShieldCheck className="h-5 w-5 text-slate-800 shrink-0 mt-0.5" />
+                        <ShieldCheck className="h-5 w-5 text-slate-400 shrink-0 mt-0.5" />
                         <span>{item}</span>
                       </li>
                     ))}
                   </ul>
                 </div>
               </CardContent>
-              <CardFooter className="px-6 pb-8 bg-slate-50 rounded-b-2xl relative -mt-4 pt-0 border-none">
-                <Button asChild className="w-full h-12 rounded-sm text-md font-semibold bg-slate-800 hover:bg-slate-900 text-white">
+              <CardFooter className="px-6 pb-8 border-none">
+                <Button asChild className="w-full h-12 rounded-sm text-md font-semibold bg-primary hover:bg-primary/90 text-white">
                   <Link href="/contact?sujet=Formule 5 IEF RAPO et Projet">Choisir cette formule complète</Link>
                 </Button>
               </CardFooter>

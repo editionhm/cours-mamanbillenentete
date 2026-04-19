@@ -21,25 +21,25 @@ export default function Home() {
               <span className="block w-full text-center text-sm md:text-base font-semibold uppercase tracking-[0.2em] text-slate-500 animate-in fade-in slide-in-from-bottom-4 duration-700">
                 L'excellence scolaire
               </span>
-              <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight text-slate-800 dark:text-slate-100 font-sans leading-tight">
-                <span className="text-primary italic relative inline-block">
+              <h1 className="text-4xl md:text-6xl lg:text-7xl font-extrabold tracking-tight text-slate-800 dark:text-slate-100 font-sans leading-tight">
+                <span className="text-primary relative inline-block">
                   Maman <br /> Bille-en-Tête
                 </span>
               </h1>
-              <p className="max-w-xl text-slate-600 dark:text-slate-300 text-lg md:text-xl leading-relaxed font-serif text-center">
+              <p className="max-w-xl text-slate-600 dark:text-slate-300 text-lg md:text-xl leading-relaxed font-serif text-center font-medium">
                 Bienvenue dans un espace dédié à la réussite et à l'épanouissement scolaire de votre enfant.
-                Nous allions <strong>savoir académique</strong> et <strong>méthode rigoureuse</strong> pour construire le savoir de chaque élève.
+                Nous allions <strong className="text-slate-900">savoir académique</strong> et <strong className="text-slate-900">méthode rigoureuse</strong> pour construire le savoir de chaque élève.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 pt-4 justify-center">
-                <Button asChild size="lg" className="rounded-sm px-8 text-lg h-14 shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all bg-white text-slate-900 border-2 border-slate-200 hover:border-primary/20 hover:bg-primary/5">
+                <Button asChild size="lg" className="rounded-sm px-10 font-bold tracking-wide text-lg h-[60px] shadow-sm hover:shadow-md hover:-translate-y-1 transition-all bg-white text-slate-900 border-2 border-slate-200 hover:border-primary/50 hover:text-primary">
                   <Link href="/rates">
-                    Découvrir nos offres
-                    <ArrowRight className="ml-2 h-5 w-5" />
+                    Les Offres
                   </Link>
                 </Button>
-                <Button asChild size="lg" className="rounded-sm px-8 text-lg h-14 shadow-lg hover:shadow-xl hover:-translate-y-0.5 transition-all bg-primary text-primary-foreground border-none hover:bg-primary/90 focus:ring-2 ring-primary/20 ring-offset-2">
+                <Button asChild size="lg" className="rounded-sm px-10 font-bold tracking-wide text-lg h-[60px] shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all bg-primary text-primary-foreground border-none hover:bg-primary/90 focus:ring-4 ring-primary/30 ring-offset-2">
                   <Link href="/contact">
-                    Contact
+                    Me Contacter
+                    <ArrowRight className="ml-2 h-5 w-5" />
                   </Link>
                 </Button>
               </div>
@@ -58,7 +58,7 @@ export default function Home() {
         <div className="container px-4 md:px-6 mx-auto">
           <div className="flex flex-col items-center text-center mb-10">
             <span className="text-secondary font-bold uppercase tracking-[0.2em] text-sm mb-2">À PROPOS</span>
-            <h2 className="text-3xl font-bold tracking-widest uppercase md:text-4xl text-slate-900 font-sans">EXPERTISE</h2>
+            <h2 className="text-3xl font-extrabold tracking-widest uppercase md:text-4xl text-slate-900 font-sans">EXPERTISE</h2>
           </div>
 
           <div className="grid gap-8 lg:grid-cols-2 lg:gap-16 items-start">
@@ -139,9 +139,9 @@ export default function Home() {
         <div className="container px-4 md:px-6 mx-auto">
           <div className="text-center max-w-3xl mx-auto mb-16">
             <span className="text-secondary font-bold uppercase tracking-[0.2em] text-sm mb-2 block">NOTRE APPROCHE</span>
-            <h2 className="text-3xl font-bold tracking-widest uppercase md:text-4xl mb-10 font-sans text-slate-900">UNE PÉDAGOGIE SUR MESURE</h2>
+            <h2 className="text-3xl font-extrabold tracking-widest uppercase md:text-4xl mb-10 font-sans text-slate-900">UNE PÉDAGOGIE SUR MESURE</h2>
             <blockquote className="relative p-8 text-xl md:text-2xl italic font-serif text-slate-700 leading-relaxed bg-slate-50 rounded-3xl border border-slate-100">
-              "l'équipe de Maman Bille en tête ne se contente pas de dispenser des cours, elle s'appuie sur une méthode rigoureuse, procure des outils efficaces et se montre disponible au-delà du temps scolaire"
+              <span className="font-semibold">"L'équipe de Maman Bille en tête ne se contente pas de dispenser des cours, elle s'appuie sur une méthode rigoureuse, procure des outils efficaces et se montre disponible au-delà du temps scolaire"</span>
             </blockquote>
           </div>
 
@@ -178,9 +178,15 @@ export default function Home() {
         </div>
         <div className="container relative px-4 md:px-6 mx-auto text-center space-y-10">
           <h2 className="text-3xl font-bold tracking-tight md:text-5xl font-sans text-white">Prêt à donner une instruction de qualité à votre enfant ?</h2>
-          <p className="max-w-2xl mx-auto text-white/90 md:text-2xl font-serif">
+          <p className="max-w-2xl mx-auto text-white/90 md:text-2xl font-serif font-medium pb-8">
             Contactez-nous pour échanger sur vos besoins et définir ensemble le meilleur accompagnement.
           </p>
+          <Button asChild size="lg" className="h-[72px] px-14 text-xl font-bold tracking-wide rounded-sm gap-4 shadow-2xl hover:shadow-3xl hover:-translate-y-1 transition-all duration-300 bg-white hover:bg-slate-50 text-slate-900 border-none">
+            <Link href="/contact">
+              DÉMARRER MAINTENANT
+              <ArrowRight className="h-6 w-6 ml-2" />
+            </Link>
+          </Button>
 
         </div>
       </section>

@@ -49,34 +49,34 @@
 
 :root {
   --background: 35 25% 98%;
-  --foreground: 220 30% 15%;
+  --foreground: 220 30% 12%;
   --card: 0 0% 100%;
-  --card-foreground: 220 30% 15%;
+  --card-foreground: 220 30% 12%;
   --popover: 0 0% 100%;
-  --popover-foreground: 220 30% 15%;
+  --popover-foreground: 220 30% 12%;
   
-  /* Primary Terracotta */
-  --primary: 15 50% 50%;
+  /* Primary Terracotta - Deeper for crisp white contrast */
+  --primary: 15 75% 42%;
   --primary-foreground: 0 0% 100%;
   
-  /* Secondary Warm Sand */
-  --secondary: 35 25% 92%;
+  /* Secondary Soft Warm Beige */
+  --secondary: 35 30% 93%;
   --secondary-foreground: 220 30% 15%;
   
   /* Accent Warm Gold/Sand */
-  --muted: 35 25% 92%;
+  --muted: 35 20% 94%;
   --muted-foreground: 220 20% 40%;
   --accent: 35 25% 92%;
-  --accent-foreground: 220 30% 15%;
+  --accent-foreground: 220 30% 12%;
   
   --destructive: 0 84.2% 60.2%;
   --destructive-foreground: 210 40% 98%;
-  --border: 220 20% 85%;
-  --input: 220 20% 85%;
-  --ring: 15 50% 50%;
+  --border: 220 15% 85%;
+  --input: 220 15% 85%;
+  --ring: 15 75% 42%;
   --radius: 0.125rem; /* VERY SHARP ROUNDING (2px) FOR RECTANGLES */
   
-  --chart-1: 15 50% 50%;
+  --chart-1: 15 75% 42%;
   --chart-2: 220 30% 15%;
   --chart-3: 197 37% 24%;
   --chart-4: 43 74% 66%;
