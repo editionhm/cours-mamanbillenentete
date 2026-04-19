@@ -53,11 +53,11 @@ export default function ContactPage() {
                                 </p>
                             </div>
 
-                            <Button asChild size="lg" className="h-[72px] px-14 text-xl font-bold tracking-wide rounded-sm gap-4 shadow-xl hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 bg-primary hover:bg-primary/90 text-white border-none ring-offset-2 hover:ring-4 ring-primary/30 flex items-center justify-center">
+                            <Button asChild size="lg" className="h-[72px] px-14 text-xl font-bold tracking-wide rounded-sm gap-4 shadow-xl hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 bg-slate-900 hover:bg-slate-800 text-white border-none flex items-center justify-center">
                                 <a href="mailto:mamanbilleentete@gmail.com">
-                                    <Mail className="h-7 w-7 animate-pulse" />
+                                    <Mail className="h-7 w-7 animate-pulse text-white" />
                                     <span>M'ÉCRIRE MAINTENANT</span>
-                                    <ArrowRight className="h-6 w-6 transition-transform group-hover:translate-x-2" />
+                                    <ArrowRight className="h-6 w-6 transition-transform group-hover:translate-x-2 text-white" />
                                 </a>
                             </Button>
 

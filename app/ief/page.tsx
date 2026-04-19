@@ -232,7 +232,7 @@ export default function IEFPage() {
                 </div>
               </CardContent>
               <CardFooter className="px-6 pb-8 border-none">
-                <Button asChild className="w-full h-12 rounded-sm text-md font-semibold bg-primary hover:bg-primary/90 text-white">
+                <Button asChild className="w-full h-12 rounded-sm text-md font-semibold bg-slate-900 hover:bg-slate-800 text-white">
                   <Link href="/contact?sujet=Formule 5 IEF RAPO et Projet">Choisir cette formule complète</Link>
                 </Button>
               </CardFooter>
